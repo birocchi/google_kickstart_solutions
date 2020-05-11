@@ -1,12 +1,12 @@
-test_cases = int(input())
-
 def calculate_peaks(n, checkpoints):
     total_peaks = 0
     for i in range(1,n-1):
         if checkpoints[i-1] < checkpoints[i] and checkpoints[i] > checkpoints[i+1]:
             total_peaks += 1
     return total_peaks
-        
+
+# --- Initial point --- #        
+test_cases = int(input())
 
 for t in range(test_cases):
     n = int(input())
